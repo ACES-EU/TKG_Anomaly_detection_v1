@@ -10,8 +10,14 @@
    
 2) Data collection
 
-Using Istio and Prometheus, time series data about microservices calls was collected (ms, total requests, request delay, request size, error codes )
-   
+Using Istio and Prometheus, time series data about microservices calls was collected (ts, ms source, ms destination,  total requests, request delay, request size, and error codes)
+
+Data is collected via direct connection to prometheus (prom = PrometheusConnect(url ="http://raphtory03:9090", disable_ssl=True))
+
+   Raphtory3 is one of our local servers
+
+   We can collect real-time and historical data providing a start and an end date.
+
 3) TKG generation
 
    Raphtory library was used for temporal graphs
