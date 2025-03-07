@@ -26,4 +26,4 @@ Data is collected via direct connection to prometheus (prom = PrometheusConnect(
    
 4) Anomaly detection
 
-   Traditional ML algorithms were trained to build models for binary classification (normal and abnormal). The labels were added based on error codes on ms calls
+   Traditional ML algorithms were trained to build models for binary classification (normal and abnormal). The labels were added based on error codes on ms calls.
