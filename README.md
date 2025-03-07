@@ -2,10 +2,20 @@
 
 ## Steps
 
-1) Benchmark App deploymet
+1) Benchmark App deployment
+   
    The online boutique app was deployed in a local Kubernetes cluster
-3) Data collection
+
+   Details here: (https://github.com/GoogleCloudPlatform/microservices-demo)
    
-4) TKG generation
+2) Data collection
+
+Using Istio and Prometheus, time series data about microservices calls was collected (ms, total requests, request delay, request size, error codes )
    
-5) Anomaly detection
+3) TKG generation
+
+   Raphtory library was used for temporal graphs
+   
+4) Anomaly detection
+
+   Traditional ML algorithms were trained to build models for binary classification (normal and abnormal). The labels were added based on error codes on ms calls
